@@ -1,0 +1,589 @@
+/* Earnings Dashboard Premium CSS styles */
+
+/* Password Verification Screen */
+.password-overlay-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.password-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.password-card-header {
+  margin-bottom: 2rem;
+}
+
+.password-card-header .shield-icon {
+  color: #6366f1;
+  margin-bottom: 1rem;
+}
+
+.password-card-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+}
+
+.password-card-header p {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.password-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  outline: none;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.password-input:focus {
+  border-color: #6366f1;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.password-error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: #fef2f2;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #fee2e2;
+  text-align: center;
+}
+
+.password-submit-btn {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.password-submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+}
+
+.password-submit-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Metric Cards */
+.earnings-metric-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s;
+}
+
+.earnings-metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.04);
+}
+
+.metric-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.metric-icon-wrapper {
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-icon-wrapper.blue {
+  background-color: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+}
+
+.metric-icon-wrapper.green {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.metric-icon-wrapper.red {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.metric-icon-wrapper.orange {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.metric-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.metric-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.metric-value.text-green {
+  color: #10b981;
+}
+
+.metric-value.text-red {
+  color: #ef4444;
+}
+
+.metric-value.text-orange {
+  color: #f59e0b;
+}
+
+.metric-desc {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Charts Grid */
+.chart-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.chart-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1.25rem 0;
+}
+
+.chart-bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.chart-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.chart-bar-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.chart-bar-track {
+  height: 8px;
+  background-color: #f1f5f9;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.chart-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chart-bar-fill.purple {
+  background: linear-gradient(90deg, #818cf8 0%, #6366f1 100%);
+}
+
+.chart-bar-fill.emerald {
+  background: linear-gradient(90deg, #34d399 0%, #10b981 100%);
+}
+
+.text-green {
+  color: #10b981 !important;
+}
+
+.text-red {
+  color: #ef4444 !important;
+}
+
+.text-orange {
+  color: #f59e0b !important;
+}
+
+.no-data-state {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .chart-container-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Premium Earnings charts & styling */
+.premium-chart-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color, rgba(15, 23, 42, 0.08));
+  transition: all 0.2s ease;
+}
+
+.premium-chart-row:hover {
+  transform: translateX(4px);
+  border-color: var(--primary-color, #7c3aed);
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+}
+
+.stylist-chart-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.chart-row-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chart-bar-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.chart-stylist-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chart-stylist-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary, #0f172a);
+}
+
+.chart-stylist-sub {
+  font-size: 0.725rem;
+  color: var(--text-muted, #94a3b8);
+  font-weight: 500;
+}
+
+.chart-stylist-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
+
+.chart-stylist-value strong {
+  font-size: 0.9rem;
+  color: var(--text-primary, #0f172a);
+  font-weight: 700;
+}
+
+.percent-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: var(--bg-dark-soft, #f8fafc);
+  border: 1px solid var(--border-color, rgba(15, 23, 42, 0.08));
+  color: var(--text-secondary, #475569);
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+
+.chart-bar-track-premium {
+  height: 6px;
+  background-color: var(--bg-dark-soft, #f8fafc);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.chart-bar-fill-premium {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Donut Chart Layout */
+.donut-chart-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .donut-chart-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.donut-chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.donut-chart-svg {
+  filter: drop-shadow(0 4px 10px rgba(15, 23, 42, 0.03));
+}
+
+.donut-segment {
+  transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.donut-center-text {
+  font-family: var(--font-family);
+}
+
+.donut-center-val {
+  font-size: 0.8rem;
+  font-weight: 800;
+  fill: var(--text-primary, #0f172a);
+}
+
+.donut-center-lbl {
+  font-size: 0.45rem;
+  font-weight: 600;
+  fill: var(--text-muted, #94a3b8);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.donut-legend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-grow: 1;
+  max-width: 280px;
+  width: 100%;
+}
+
+.donut-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  background-color: var(--bg-dark-soft, #f8fafc);
+  border: 1px solid var(--border-color, rgba(15, 23, 42, 0.08));
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.donut-legend-item:hover {
+  border-color: var(--primary-color, #7c3aed);
+}
+
+.legend-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.legend-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary, #0f172a);
+}
+
+.legend-amount {
+  font-size: 0.7rem;
+  color: var(--text-muted, #94a3b8);
+}
+
+.legend-percentage {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary, #475569);
+  background: white;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color, rgba(15, 23, 42, 0.08));
+}
+
+/* Period Selector Styling */
+.earnings-period-selector {
+  display: flex;
+  background: var(--bg-dark-soft, #f8fafc);
+  border: 1px solid var(--border-color, rgba(15, 23, 42, 0.08));
+  padding: 0.25rem;
+  border-radius: 10px;
+  width: fit-content;
+  gap: 0.25rem;
+}
+
+.period-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary, #475569);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.period-btn:hover {
+  color: var(--primary-color, #7c3aed);
+  background: rgba(124, 58, 237, 0.04);
+}
+
+.period-btn.active {
+  background: #ffffff;
+  color: var(--primary-color, #7c3aed);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  border: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+/* Custom Date Filter Styles */
+.custom-date-inputs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.date-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.date-input-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary, #475569);
+}
+
+.date-picker-field {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border-color, rgba(15, 23, 42, 0.08));
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--text-primary, #0f172a);
+  background-color: white;
+  outline: none;
+  font-family: var(--font-family, inherit);
+  transition: all 0.2s ease;
+}
+
+.date-picker-field:focus {
+  border-color: var(--primary-color, #7c3aed);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.date-picker-field.error {
+  border-color: var(--error, #ef4444) !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
+  animation: shake 0.2s ease-in-out 2;
+}
+
+/* Detail Table Filters */
+.detail-filters {
+  background: white;
+  border: 1px solid var(--border-color, rgba(15, 23, 42, 0.08));
+  padding: 0.35rem 0.75rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.01);
+}
+
+.clear-btn:hover {
+  color: var(--error, #ef4444) !important;
+}
+
+/* General Layout Shake Animation for error states */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+/* Today's active stylist time pills */
+.shift-time-badge-pill {
+  transition: all 0.2s ease;
+}
+.shift-time-badge-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}

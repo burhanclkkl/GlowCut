@@ -1,0 +1,138 @@
+/* Expenses Dashboard Custom Styles */
+
+.add-expense-quick-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  padding: 0.6rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.add-expense-quick-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.3);
+}
+
+.add-expense-quick-btn:active {
+  transform: translateY(0);
+}
+
+.status-badge.status-cancelled {
+  background: rgba(239, 68, 68, 0.08) !important;
+  color: #ef4444 !important;
+  border: 1px solid rgba(239, 68, 68, 0.15) !important;
+}
+
+@media (max-width: 640px) {
+  .add-expense-quick-btn span {
+    display: none;
+  }
+  .add-expense-quick-btn {
+    padding: 0.6rem;
+    border-radius: 50%;
+  }
+}
+
+/* Quick Invoice & Form Elements */
+.quick-invoice-form select.filter-select,
+.quick-invoice-form input.filter-input {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.2s ease;
+  min-height: 40px;
+}
+
+.quick-invoice-form select.filter-select:focus,
+.quick-invoice-form input.filter-input:focus {
+  border-color: #7c3aed;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+/* Detail Filters Row Formatting */
+.detail-filters .date-picker-field {
+  padding: 0.45rem 0.65rem;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.2s ease;
+  min-width: 135px;
+}
+
+.detail-filters .date-picker-field:focus {
+  border-color: #7c3aed;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.detail-filters .date-picker-field.error {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+/* Pagination Styling */
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.pagination-btn {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #f8fafc;
+  color: #7c3aed;
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+.pagination-btn.active {
+  background: #7c3aed;
+  color: white;
+  border-color: #7c3aed;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
